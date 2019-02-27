@@ -50,6 +50,16 @@ variable "default_tags" {
   }
 }
 
+variable "manager_vm_size" {
+  type    = "string"
+  default = "Standard_DS2_v2"
+}
+
+variable "worker_vm_size" {
+  type    = "string"
+  default = "Standard_DS4_v2"
+}
+
 variable "worker_count" {
   type    = "string"
   default = "3"

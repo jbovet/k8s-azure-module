@@ -37,6 +37,8 @@ module "k8s" {
 * **images_resource_group**: Resource group where to find the custom images (type: string, required).
 * **ssh_public_key**: The public ssh key for connect to bastion (type: string, required).
 * **default_tags**: Tags assigned to every resource that support it (type: map).
+* **manager_vm_size**: Specifies the size of the Virtual Machine Manager.(type: string, default: Standard_DS2_v2).
+* **worker_vm_size**: Specifies the size of the Virtual Machine Worker.(type: string, default: Standard_DS4_v2).
 * **worker_count**: Number of workers (type: string, default: 3).
 * **lb_address_pool_id**: Load balancer address pool id (type: string).
 
